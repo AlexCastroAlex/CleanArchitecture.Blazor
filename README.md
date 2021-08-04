@@ -8,4 +8,12 @@ The only working endpoint is the weatherforeact one  because the todolist and to
 If you would like to use SQL Server, you will need to update WebUI/appsettings.json as follows:
 
   "UseInMemoryDatabase": false,
+  
+  
+ # Database Migrations
+To use dotnet-ef for your migrations please add the following flags to your command (values assume you are executing from repository root)
+
+--project src/Infrastructure (optional if in this folder)
+--startup-project src/WebUI
+--output-dir Persistence/Migrations
 
